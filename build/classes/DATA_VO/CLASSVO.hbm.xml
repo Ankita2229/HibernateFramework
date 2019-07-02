@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="DATA_VO.CLASS_VO" table="purchase_details">
+   
+   	<id name="data_Id" type="long" column="PK">
+   		<generator class="increment"/>
+  	</id>
+		
+		<property name="ur_name">
+  		<column name="Name"/>
+  	</property>
+  	
+  	<property name="ph_no">
+  		<column name="Number"/>
+  	</property>
+  	
+  	<property name="h_ad">
+  		<column name="Address"/>
+  	</property>
+  	
+  	<property name="elec_id">
+  		<column name="Email-id"/>
+  	</property>
+  	
+  	<property name="item">
+  		<column name="Product"/>
+  	</property>
+  	
+  	<property name="quos">
+  		<column name="Quantity"/>
+  	</property>
+  	
+  	<property name="money">
+  		<column name="Payment-type"/>
+  	</property>
+ 
+ </class>
+
+</hibernate-mapping>
+
+  	

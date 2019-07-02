@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="DATA_VO.VO" table="user_profile">
+   
+   	<id name="data_Id" type="long" column="Data_ID">
+   		<generator class="increment"/>
+  	</id>
+		
+  	
+  	<property name="u_name">
+  		<column name="Name"/>
+  	</property>
+  	
+  	<property name="pass">
+  		<column name="Password"/>
+  	</property>
+  	
+  </class>
+
+</hibernate-mapping>
+
+  	
